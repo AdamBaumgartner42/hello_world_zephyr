@@ -1,0 +1,11 @@
+/*
+ * Purpose: move &uart0 pins from Debug PCB vias to actual pins
+ * Note: PCB via pins still output data. (won't if you change to @uart1)
+ */
+
+&uart0 {
+  status = "okay";
+  current-speed = <115200>;
+  tx-pin = <42>;
+  rx-pin = <21>;
+};
